@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Roboto:ital@1&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  background-color: #0B2434;
+  margin: 0;
+  display: flex;
+  font-family: 'Inter',sans-serif;
+}
+.container{
+  display: flex;
+  width: 480px;
+  height: 460px;
+  background-color:#F5F5F5 ;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%,-50%);
+  top: 50%;
+  border-radius: 10px;
+}
+.dice-container{
+  width: 380px;
+  height: 170px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+  transform:translate(20px,200px) ;
+}
+.die-face{
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.die-face h2{
+  transform: translateY(-35px);
+}
+.button{
+  width: 140px;
+  height: 60px;
+  background-color: #5035FF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  transform: translate(170px,370px);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 20px;
+  color:#FFFFFF ;
+}
+.button:hover{
+  background-color: #2305e2;
+}
+.button:active{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
