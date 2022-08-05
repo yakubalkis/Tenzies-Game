@@ -26,7 +26,7 @@ body{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 5px;
-  transform:translate(20px,200px) ;
+  transform:translate(-280px,200px) ;
 }
 .die-face{
   width: 60px;
@@ -62,4 +62,35 @@ body{
 }
 .button:active{
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  transform: translateX(100px);
+  text-align: center;
+}
+.header h1{
+  width: 200px;
+  height: 40px;
+  font-size: 40px;
+  color: #2B283A;
+  transform: translateY(25px);
+}
+.header p{
+  width: 300px;
+  height: 50px;
+  color: #4A4E74;
+}
+.moveNumber{
+  position: absolute;
+  margin-left: 35px;
+  font-weight: 700;
+  color: #2B283A;
+}
+.record{
+  position: absolute;
+  margin-left: 320px;
+  font-weight: 700;
+  color: #2B283A;
 }
